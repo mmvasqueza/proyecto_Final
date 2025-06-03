@@ -55,13 +55,59 @@
             <a class="nav__link" href="#"><i class="bx bxs-bell nav__link-icon" ></i><span class="nav__link-badge">5</span> </a>
             <a class="nav__link" href="#"><i class="bx bxs-message-square-dots nav__link-icon" ></i><span class="nav__link-badge">8</span> </a>
             <!--Foto de perfil-->
-            <span class="nav_divider"></span>
+            <span class="nav__divider"></span>
+            <div class="nav__profile">
+                <img src="#" class="nav__profile-img">
+                  <ul class="nav__profile-link">
+                    <li><a href="#"> <i class="bx bxs-user-circle nav__link-icon"></i>Pefil </a></li>
+                    <li><a href="#"> <i class="bx bxs-cog nav__link-icon"></i>Configuración </a>    </li>
+                    <li><a href="#"> <i class="bx bxs-log-out-circle nav__link-icon"></i>Cerrar Sesión </a>    </li>
+                </ul>
+            </div>
 
         </nav>
         <!--Aqui termina el menu de navegacion-->
 
         <!--Aqui comienza el contenido principal-->
         <main>
+            <h1 class="main__title">Panel de control</h1>
+            <ul class="main__migas">
+                <li><a href="#"></a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="active">Bienvenido</a></li>
+            </ul>
+
+            <div class="main__data">
+                <div class="data__content-data">
+                    <h3>Demostración de consumo de API</h3>
+                    <p>Esta tabla Consume: https://fakestoreapi.com/products para obtener los datos que se indexan en la tabla </p>  
+
+                    <div class="main__divTable">
+                        <div class="main__div-header">
+                            <button onclick="openModal()"  class="main__nuevo-registro">Registrar</button>
+                        </div>
+
+                        <table class="main__divTable-table">
+                            <thead class="main__divTable-table--thead">
+                                <tr>ID</tr>
+                                <tr>Nombre del Producto</tr>
+                                <tr>Precio</tr>
+                                <tr>Categoria</tr>
+                                <tr>ACCIONES</tr>
+                            </thead>
+                            <tbody id="productTableBody">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
 
         </main>
     </section>
