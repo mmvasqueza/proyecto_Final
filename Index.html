@@ -10,13 +10,13 @@
 <body>
     <!--Aqui comienza el Menu lateral-->
     <section id="menuLateral">
-     <a href="#" class="menuLateral__brand"> <i class="bx bxs-smile menuLateral__icon"></i>TECNODATA</a>
+     <a href="./Index.html" class="menuLateral__brand"> <i class="bx bxs-smile menuLateral__icon"></i>TECNODATA</a>
 
      <ul class="menuLateral__side-menu">
         <li class="menuLateral__divisor" data-tex="OPERACIONES"> Operaciones</li> 
-        <li><a href="#" class="active"> <i class="bx bx-dots-horizontal-rounded menuLateral__icon"></i>Facturar </a> </li>
+        <li><a href="./Facturar.html" class="active"> <i class="bx bx-dots-horizontal-rounded menuLateral__icon"></i>Facturar </a> </li>
         <li><a href="#"> <i class="bx bxs-widget menuLateral__icon"></i> Comprar</a></li>
-        <li><a href="#"> <i class="bx bxs-inbox menuLateral__icon"></i>INVENTARIOS </a></li>
+        <li><a href="#"> <i class="bx bxs-inbox menuLateral__icon"></i>INVENTARIOS </a> <i class="bx bx-chevron-right menuLateral__icon--right"></i></li>
         <!--Sub menu de navegacion que depende de inventarios-->
         <ul class="menuLateral__side-dropdown">
             <li><a href="#">Materia Prima  </a></li>
@@ -25,7 +25,7 @@
 
         <li class="menuLateral__divisor" data-tex="CATALOGOS">Catalogos</li> 
            <!--Sub menu de navegacion que depende de inventarios-->
-       <li><a href="#"> <i class="bx bx-table menuLateral__icon"></i>Tablas Catalogos </a></li>
+       <li><a href="#"> <i class="bx bx-table menuLateral__icon"></i>Tablas Catalogos </a><i class="bx bx-chevron-right menuLateral__icon--right"></i></li>
         <ul class="menuLateral__side-dropdown">
             <li><a href="#">Categoria </a></li>
             <li><a href="#">Proveedores </a>    </li>
@@ -33,7 +33,7 @@
             <li><a href="#">Sucursales </a>    </li>
         </ul>
 
-      <li><a href="#"> <i class="bx bxs-chart menuLateral__icon"></i>Reportes </a></li>  
+      <li><a href="./Reportes.html"> <i class="bx bxs-chart menuLateral__icon"></i>Reportes </a></li>  
     </ul>
  
     </section>
@@ -44,6 +44,7 @@
     <section id="content">
         <!--Aqui comienza el menu de navegacion-->
         <nav>
+            <i class="bx bx-menu nav__link-sidebar"></i>
             <!--Este es el input de busqueda-->
             <form class="nav__form" action="#">
                 <div class="nav__form-group">
@@ -55,13 +56,13 @@
             <a class="nav__link" href="#"><i class="bx bxs-bell nav__link-icon" ></i><span class="nav__link-badge">5</span> </a>
             <a class="nav__link" href="#"><i class="bx bxs-message-square-dots nav__link-icon" ></i><span class="nav__link-badge">8</span> </a>
             <!--Foto de perfil-->
-            <span class="nav__divider"></span>
+            <span class="nav__divider">/</span>
             <div class="nav__profile">
-                <img src="#" class="nav__profile-img">
+                <img src="./img/profile.png" class="nav__profile-img">
                   <ul class="nav__profile-link">
                     <li><a href="#"> <i class="bx bxs-user-circle nav__link-icon"></i>Pefil </a></li>
-                    <li><a href="#"> <i class="bx bxs-cog nav__link-icon"></i>Configuración </a>    </li>
-                    <li><a href="#"> <i class="bx bxs-log-out-circle nav__link-icon"></i>Cerrar Sesión </a>    </li>
+                    <li><a href="#"> <i class="bx bxs-cog "></i>Configuración </a>    </li>
+                    <li><a href="#"> <i class="bx bxs-log-out-circle"></i>Cerrar Sesión </a>    </li>
                 </ul>
             </div>
 
