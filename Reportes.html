@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Desarrollador: Ing.Marelo Vasquez-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--libreria de iconos-->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!--Referencia al estilo del sitio-->
+	<link rel="stylesheet" href="./styles.css">
+	<title>TECNODATA Dashboard</title>
+</head>
+<body>
+	
+	<!-- Aqui comienza el MENU LATERAL IZQUIERDO -->
+
+	<!-- DEFINCION DE BLOQUE -->
+	<section id="menuLateral">
+		<!-- TITULO DE LA APLICACION WEB -->
+		<a href="./Index.html" class="menuLateral__brand"><i class='bx bxs-smile menuLateral__icon'></i>TECNODATA</a>
+		<!-- Lista Desordenada de las opciones del menu lateral -->
+		<ul class="menuLateral__side-menu">
+			<!--Leyenda para segmentar opciones de las operaciones del sistema-->
+			<li class="menuLateral__divisor" data-text="OPERACIONES">Operaciones</li>
+				<li>
+					<a href="./Facturar.html" class="active">
+					<i class='bx bx-dots-horizontal-rounded menuLateral__icon' ></i> Facturar</a>
+				</li>
+				<li>
+					<a href="#"><i class='bx bxs-widget menuLateral__icon' ></i> Compras</a></li>
+					<!--Definición de menu padre que contendra: [Materia Prima] & [Producto Fabricado]-->
+				<li>
+					<a href="#"><i class='bx bxs-inbox menuLateral__icon' ></i> INVENTARIOS <i class='bx bx-chevron-right menuLateral__icon--right' ></i></a>
+					<!--Definición de Submenu que depende del Menu INVENTARIOS-->
+					<ul class="menuLateral__side-dropdown">
+						<li><a href="">Materia Prima</a></li>
+						<li><a href="#">Producto Fabricado</a></li>
+					</ul>
+				</li>
+
+			<!--Leyenda para segmentar opciones de las tablas catalogos del sistema-->
+			<li class="menuLateral__divisor" data-text="CATALOGOS">CATALOGOS</li>
+			<li>
+				<a href="#"><i class='bx bx-table menuLateral__icon' ></i> Tablas catalogos <i class='bx bx-chevron-right menuLateral__icon--right' ></i></a>
+				<ul class="menuLateral__side-dropdown">
+					<li><a href="#">Categorias</a></li>
+					<li><a href="./Index.html">Proveedores</a></li>
+					<li><a href="#">Fabricas</a></li>
+					<li><a href="#">Sucursales</a></li>				
+				</ul>
+			</li>
+			<!--Salida de la información que mostrara el sistema-->
+			<li><a href="./reportes.html"><i class='bx bxs-chart menuLateral__icon' ></i> Reportes</a></li>
+		</ul>
+	</section>
+	<!-- Aqui termina la barra lateral izquierda -->
+	<!-- AQUI COMIENZA LA SECCION DEL CONTENIDO DEL SITIO -->
+	<section id="content">
+		<!-- AQUI COMIENZA LA BARRA DE NAVEGACION -->
+		<nav>
+			<i class='bx bx-menu nav__toggle-sidebar'></i>
+			<!--Formulario de Busqueda-->
+			<form class="nav__form" action="#">
+				<div class="nav__form-group">
+					<input id="searchInput"  class="nav__form-group--input" type="text" placeholder="Buscar...">
+					<i class='bx bx-search nav__form-group--icon'></i>
+				</div>
+			</form>
+			<!--Icono de campana de notificacion-->
+			<a href="#" class="nav__link">
+				<i class='bx bxs-bell nav__link-icon' ></i>
+				<span class="nav__link-badge">5</span>
+			</a>
+			<!--Icono de notificaciones de mensajes-->
+			<a href="#" class="nav__link">
+				<i class='bx bxs-message-square-dots nav__link-icon'></i>
+				<span class="nav__link-badge">8</span>
+			</a>
+
+			<span class="nav__divider"></span>
+			<!--Foto de perfil del usuario que inicio sesion en el sistema-->
+			<div class="nav__profile">
+				<img src="./img/profile.png" class="nav__profile-img">
+				<ul class="nav__profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle nav__link-icon' ></i> Perfil</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Configuracion</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Cerrar Sesion</a></li>
+				</ul>
+			</div>
+		</nav>
+	    <!-- AQUI TERMINA LA BARRA DE NAVEGACION -->
+
+		<!-- AQUI COMIENZA EL CONTENIDO PRINCIPAL DEL DASHBOARD -->
+		<main>
+			<h1 class="main__title">Panel de control</h1>
+			<ul class="main__migas">
+				<li><a href="#">DASHBOARD</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">REPORTES</a></li>
+			</ul>
+			<!-- AQUI COMIENZA LA SECCION DE LAS TABLAS DE REPORTES DEL DASHBOARD -->
+			<div class="info-data">
+				<div class="info-data__card">
+					<div class="info-data__card--head">
+						<div>
+							<h2>1500</h2>
+							<p>Trafico</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="40%"></span>
+					<span class="label">40%</span>
+				</div>
+				<div class="info-data__card">
+					<div class="info-data__card--head">
+						<div>
+							<h2>234</h2>
+							<p>Ventas</p>
+						</div>
+						<i class='bx bx-trending-down icon down' ></i>
+					</div>
+					<span class="progress" data-value="60%"></span>
+					<span class="label">60%</span>
+				</div>
+				<div class="info-data__card">
+					<div class="info-data__card--head">
+						<div>
+							<h2>465</h2>
+							<p>Vista</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="30%"></span>
+					<span class="label">30%</span>
+				</div>
+				<div class="info-data__card">
+					<div class="info-data__card--head">
+						<div>
+							<h2>235</h2>
+							<p>Visitantes</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="80%"></span>
+					<span class="label">80%</span>
+				</div>
+			</div> 
+
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<h3>Reportes de Ventas</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="chart"> </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Reportes  de valoraciones de los Productos -->
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="area-chart"> </div>
+					</div>
+				</div>
+			</div>
+			<!-- Reportes de cantidad de productos por categoria -->
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="bar-chart"> </div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Reportes de cantidad de productos por categoria -->
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="line-chart"> </div>
+					</div>
+				</div>
+			</div>
+
+		    <!-- Reportes de porcentaje por categoria de productos -->
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="pie-chart"> </div>
+					</div>
+				</div>
+			</div>
+
+
+			 <!-- Reportes de porcentaje por categoria de productos -->
+			<div class="main__data">
+				<div class="data__content-data">
+					<div class="head">
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Guardar</a></li>
+								<li><a href="#">Editar</a></li>
+								<li><a href="#">Remover</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<div id="radar-chart"> </div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</main>
+		<!-- AQUI TERMINA EL CONTENIDO PRINCIPAL DEL DASHBOARD -->
+	</section>
+	<!-- AQUI TERMINA LA BARRA DE NAVEGACION DEL  -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="./scriptsR.js"></script>
+</body>
+</html>
